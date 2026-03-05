@@ -20,3 +20,15 @@ echo 'export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"' 
 source ~/.bashrc
 
 echo "--- Instalación de Rust completada ---"
+
+sudo apt update
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash    
+
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+nvm install node 
+
+sudo npm install -g typescript   
+
+
